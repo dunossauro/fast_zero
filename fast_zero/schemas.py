@@ -13,10 +13,6 @@ class UserPublic(BaseModel):
     email: EmailStr
 
 
-class UserDB(UserPublic):
-    password: str
-
-
 class UserList(BaseModel):
     users: list[UserPublic]
 

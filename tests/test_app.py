@@ -26,7 +26,14 @@ def test_create_user(client):
     }
 
 
-def test_read_users(client: TestClient):
+def test_read_users_empty(client: TestClient):
+    response = client.get('/users/')
+
+    assert response.status_code == 200
+    assert response.json() == {'users': []}
+
+
+def test_read_users(client: TestClient, user):
     response = client.get('/users/')
 
     assert response.status_code == 200
@@ -41,7 +48,7 @@ def test_read_users(client: TestClient):
     }
 
 
-def test_update_user(client):
+def test_update_user(client, user):
     response = client.put(
         '/users/1',
         json={
@@ -59,8 +66,8 @@ def test_update_user(client):
     }
 
 
-def test_delete_user(client):
-    response = client.delete('/users/1')
+def test_delete_user(client, user):
+    response = client.delete(f'/users/{user.id}')
 
     assert response.status_code == 200
     assert response.json() == {'detail': 'User deleted'}
