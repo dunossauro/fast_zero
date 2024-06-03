@@ -1,90 +1,93 @@
+# flyctl launch added from .gitignore
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
+**/.env
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+**/__pycache__
+**/*.py[cod]
+**/*$py.class
 
 # C extensions
-*.so
+**/*.so
 
 # Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+**/.Python
+**/build
+**/develop-eggs
+**/dist
+**/downloads
+**/eggs
+**/.eggs
+**/lib
+**/lib64
+**/parts
+**/sdist
+**/var
+**/wheels
+**/share/python-wheels
+**/*.egg-info
+**/.installed.cfg
+**/*.egg
+**/MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+**/*.manifest
+**/*.spec
 
 # Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+**/pip-log.txt
+**/pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
+**/htmlcov
+**/.tox
+**/.nox
+**/.coverage
+**/.coverage.*
+**/.cache
+**/nosetests.xml
+**/coverage.xml
+**/*.cover
+**/*.py,cover
+**/.hypothesis
+**/.pytest_cache
+**/cover
 
 # Translations
-*.mo
-*.pot
+**/*.mo
+**/*.pot
 
 # Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+**/*.log
+**/local_settings.py
+**/db.sqlite3
+**/db.sqlite3-journal
 
 # Flask stuff:
-instance/
-.webassets-cache
+**/instance
+**/.webassets-cache
 
 # Scrapy stuff:
-.scrapy
+**/.scrapy
 
 # Sphinx documentation
-docs/_build/
+**/docs/_build
 
 # PyBuilder
-.pybuilder/
-target/
+**/.pybuilder
+**/target
 
 # Jupyter Notebook
-.ipynb_checkpoints
+**/.ipynb_checkpoints
 
 # IPython
-profile_default/
-ipython_config.py
+**/profile_default
+**/ipython_config.py
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
@@ -111,50 +114,50 @@ ipython_config.py
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
 #   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
+**/.pdm.toml
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
+**/__pypackages__
 
 # Celery stuff
-celerybeat-schedule
-celerybeat.pid
+**/celerybeat-schedule
+**/celerybeat.pid
 
 # SageMath parsed files
-*.sage.py
+**/*.sage.py
 
 # Environments
 #.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+**/.venv
+**/env
+**/venv
+**/ENV
+**/env.bak
+**/venv.bak
 
 # Spyder project settings
-.spyderproject
-.spyproject
+**/.spyderproject
+**/.spyproject
 
 # Rope project settings
-.ropeproject
+**/.ropeproject
 
 # mkdocs documentation
-/site
+site
 
 # mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+**/.mypy_cache
+**/.dmypy.json
+**/dmypy.json
 
 # Pyre type checker
-.pyre/
+**/.pyre
 
 # pytype static type analyzer
-.pytype/
+**/.pytype
 
 # Cython debug symbols
-cython_debug/
+**/cython_debug
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
@@ -165,15 +168,35 @@ cython_debug/
 
 ### Python Patch ###
 # Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
-poetry.toml
+**/poetry.toml
 
 # ruff
-.ruff_cache/
+**/.ruff_cache
 
 # LSP config files
-pyrightconfig.json
+**/pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
 
 # Generated using ignr.py - github.com/Antrikshy/ignr.py
 
+
+# flyctl launch added from .mypy_cache/.gitignore
+# Automatically created by mypy
+.mypy_cache/**/*
+
+# flyctl launch added from .pytest_cache/.gitignore
+# Created by pytest automatically.
+.pytest_cache/**/*
+
+# flyctl launch added from .ruff_cache/.gitignore
+.ruff_cache/**/*
+
+# flyctl launch added from .venv/.gitignore
+# created by virtualenv automatically
+.venv/**/*
+
+# flyctl launch added from htmlcov/.gitignore
+# Created by coverage.py
+htmlcov/**/*
+fly.toml
