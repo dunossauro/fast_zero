@@ -13,8 +13,7 @@ from tests.factories import UserFactory
 
 @pytest.fixture(scope='session')
 def engine():
-    with PostgresContainer("postgres:16", driver='psycopg') as p:
-
+    with PostgresContainer('postgres:16', driver='psycopg') as p:
         _engine = create_engine(p.get_connection_url())
 
         with _engine.begin():
